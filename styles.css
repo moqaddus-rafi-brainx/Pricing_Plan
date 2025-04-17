@@ -1,0 +1,160 @@
+
+body{
+    background-color: #f7f4f4;
+}
+
+/* Main Heading */
+h1{
+    font-family: sans-serif;
+    font-size: 3rem;
+    color:#3b3366;
+    margin-bottom: 70px;
+    text-align:center;
+}
+
+.pricing-cards{
+    display:flex;
+    gap:20px;
+    justify-content: center;
+    text-align:center;
+    font-family:sans-serif
+}
+
+.card {
+    border:3px solid #cfcfcf;
+    background-color: white;
+    border-radius: 7px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left:10px;
+    padding-right:10px;
+    width:280px;
+    font-size: 0.9rem;
+    transition:all 0.7s ease;
+    position:relative;
+    align-items: flex-start; /* Allows changing the cards individually.For making side cards smaller*/
+}
+
+.card:hover{
+    transform:translateY(-25px); /* Move cards up upon hovering*/
+}
+
+.center-card{
+    border-color: #3eb774;
+
+}
+
+/* Making the side cards appear smaller in height */
+.side-card{
+    margin-bottom:30px;
+    margin-top:30px;
+} 
+
+/* Heading of Each Card(Limited,Brilliant,Basic) */
+h2{
+    color:#2b2450;
+    font-size:1.7rem;
+    margin-bottom:10px;
+
+}
+
+/* Star icon appearing at top left of center card */
+.star{
+    position:absolute; /* Absolute but relative to the card its in */
+    top:0px;
+    left:0px;
+    background-color: #3eb774;
+    color:white;
+    padding-top:5px;
+    padding-left:5px;
+    padding-bottom:25px;
+    padding-right:25px;
+    margin-top: 0px;
+    font-size:1.2rem;
+    font-style: bold;
+    
+    clip-path: polygon( /* Custom shape */
+    0 0,          /* top-left */
+    100% 0,       /* top-right */
+    calc(100% - 50px) 100%, /* after bottom-right */
+    0 100%        /* bottom-left */
+  );
+
+
+
+}
+
+.price{
+    font-size:1rem;
+    color:#777;
+    margin-bottom: 20px;
+    margin-top:0px;
+}
+
+.tag{
+    border-radius: 20px;
+    border: 1px solid #cfcfcf;
+    background-color:white ;
+    color: #3eb774;
+    padding:6px 16px;
+    display: inline-block;
+    font-weight: bold;
+    margin-bottom: 30px;
+    font-size:0.9rem;
+    position:absolute;   /* Positioning the tag */
+    top:120px;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space:nowrap;  /* Stops the line-break from happening */
+    
+}
+
+.btn{
+    color:#29a662;
+    background-color:#f2eded ;
+    padding: 10px 20px;
+    border:none;
+    border-radius:6px;
+    margin-top: 15px;
+    margin-bottom:30px;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+/* Button of the center card */
+.btn-center{
+    color: white;
+    background-color: #3eb774;
+}
+
+/* Button of the cards on both side when hovered */
+.btn-side:hover{
+    color: white;
+    background-color: #3eb774;
+}
+
+ul{
+    list-style-type: none; /* To remove the default bullets appearing */
+    text-align: left;
+    color:#777;
+    font-size: 1rem;
+    padding-left: 10px;
+    
+}
+
+li{
+    margin-bottom: 16px;
+}
+
+li::before{
+    content:">  ";
+    color:#3eb774
+
+}
+
+hr{
+    width:80%;
+    margin-top:40px;
+    margin-bottom: 40px;
+    color: #cfcfcf;
+}
