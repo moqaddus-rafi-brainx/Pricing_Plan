@@ -1,27 +1,30 @@
 
 body{
-    background-color: #f7f4f4;
+    background-color: #f8f9fa;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+
 }
 
 /* Main Heading */
 h1{
-    font-family: sans-serif;
-    font-size: 3rem;
+    font-size: 40px;
+    font-weight: 500;
     color:#3b3366;
-    margin-bottom: 70px;
+    margin-bottom: 50px;
     text-align:center;
 }
 
 .pricing-cards{
     display:flex;
+    flex-wrap: wrap;
     gap:20px;
     justify-content: center;
     text-align:center;
-    font-family:sans-serif
+    font-family:sans-serif;
 }
 
 .card {
-    border:3px solid #cfcfcf;
+    border:3px solid #e8e8e8;
     background-color: white;
     border-radius: 7px;
     padding-top: 10px;
@@ -40,7 +43,7 @@ h1{
 }
 
 .center-card{
-    border-color: #3eb774;
+    border-color: #0abf53;
 
 }
 
@@ -63,7 +66,7 @@ h2{
     position:absolute; /* Absolute but relative to the card its in */
     top:0px;
     left:0px;
-    background-color: #3eb774;
+    background-color: #0abf53;
     color:white;
     padding-top:5px;
     padding-left:5px;
@@ -93,9 +96,9 @@ h2{
 
 .tag{
     border-radius: 20px;
-    border: 1px solid #cfcfcf;
+    border: 1px solid #e8e8e8;
     background-color:white ;
-    color: #3eb774;
+    color: #0abf53;
     padding:6px 16px;
     display: inline-block;
     font-weight: bold;
@@ -110,7 +113,7 @@ h2{
 }
 
 .btn{
-    color:#29a662;
+    color:#0abf53;
     background-color:#f2eded ;
     padding: 10px 20px;
     border:none;
@@ -124,13 +127,13 @@ h2{
 /* Button of the center card */
 .btn-center{
     color: white;
-    background-color: #3eb774;
+    background-color: #0abf53;
 }
 
 /* Button of the cards on both side when hovered */
 .btn-side:hover{
     color: white;
-    background-color: #3eb774;
+    background-color: #0abf53;
 }
 
 ul{
@@ -148,7 +151,7 @@ li{
 
 li::before{
     content:">  ";
-    color:#3eb774
+    color:#0abf53;
 
 }
 
@@ -156,5 +159,40 @@ hr{
     width:80%;
     margin-top:40px;
     margin-bottom: 40px;
-    color: #cfcfcf;
+    color: #e8e8e8;
+}
+
+.copyright{
+    text-align: center;
+    display: block;
+    color: rgba(22, 28, 45, 0.7);
+    opacity: .8;
+    font-size: 18px;
+    line-height: 28px;
+    padding-top: 25px;
+}
+
+.copyright p a{
+    color:#3b3663;
+    text-decoration: none;
+}
+
+@media (max-width: 736px) {
+    .pricing-cards {
+       
+        flex-direction: column;
+        align-items: center;
+    }
+
+    h1{
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    
+    h1{
+        font-size: 30px;
+        margin-bottom:20px ;
+    }
 }
